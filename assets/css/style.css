@@ -1,0 +1,85 @@
+:root {
+  --normal-blue: #2196F3;
+  --dark-blue: #0D47A1;
+  --normal-orange: #FF9800;
+  --dark-orange: #FF6F00;
+  --dark-grey: #424242;
+  --light-grey: #F5F5F5;
+}
+
+.light-grey-background {
+  background: var(--light-grey);
+}
+
+body {
+  padding-top: 80px;
+}
+
+/* Navigation bar */
+
+header {
+  background: #fff;
+  height: 80px;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: -40px; // same as header height. use variables in LESS/SASS
+}
+
+nav {
+  background-color: var(--light-grey);
+  height: 80px;
+  line-height: 80px;
+  z-index: 10000;
+}
+
+nav img {
+  position: relative;
+  top:5px;
+  bottom:0;
+  margin:auto;
+}
+
+nav li a {
+  color: var(--dark-grey);
+}
+
+.brand-logo {
+  min-height: 80px;
+}
+
+.nav-wrapper {
+  height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Parallax homepage */
+
+.parallax-container {
+  height: 700px;
+  z-index: -1;
+}
+
+/* Divs */
+
+.main-div-split-half {
+  padding: 5% 10% 5% 10%;
+}
+
+.div-split-half-left {
+  width: 50%;
+  float: left;
+  padding-right: 2.5%;
+}
+
+.div-split-half-right {
+  width: 50%;
+  float: right;
+  padding-left: 2.5%;
+}
